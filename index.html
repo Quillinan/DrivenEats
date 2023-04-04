@@ -1,7 +1,182 @@
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Driven Eats</title>
-  </head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <body></body>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Projeto3-DrivenEats</title>
+  </head>
+  <body>
+    <header>
+      <div id="contentHeader">
+        <h1>DrivenEats</h1>
+        <p>Sua comida em 6 minutos</p>
+      </div>
+    </header>
+    <main>
+      <div id="content">
+        <h2>Primeiro, seu prato</h2>
+        <div class="container dish">
+          <div class="contentCard">
+            <div
+              onclick="selectDish('.dish1')"
+              class="card dish1"
+              data-test="dish"
+            >
+              <div class="divCard">
+                <img src="images/frango_yin_yang.png" alt="" />
+                <h3 data-test="item-name">Frango Yin Yang</h3>
+                <p>Um pouco de batata,<br />um pouco de salada</p>
+                <h4 data-test="item-price">R$ 14,90</h4>
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+            <div
+              onclick="selectDish('.dish2')"
+              class="card dish2"
+              data-test="dish"
+            >
+              <div class="divCard">
+                <img src="images/frango_yin_yang.png" alt="" />
+                <h3 data-test="item-name">Frango Yin Yang</h3>
+                <p>Um pouco de batata,<br />um pouco de salada</p>
+                <h4 data-test="item-price">R$ 14,90</h4>
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+            <div
+              onclick="selectDish('.dish3')"
+              class="card dish3"
+              data-test="dish"
+            >
+              <div class="divCard">
+                <img src="images/frango_yin_yang.png" alt="" />
+                <h3 data-test="item-name">Frango Yin Yang</h3>
+                <p>Um pouco de batata,<br />um pouco de salada</p>
+                <h4 data-test="item-price">R$ 14,90</h4>
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2>Agora, sua bebida</h2>
+        <div class="container drink">
+          <div class="contentCard">
+            <div
+              class="card drink1"
+              onclick="selectDrink('.drink1')"
+              data-test="drink"
+            >
+              <div class="divCard">
+                <img src="images/coca-cola.png" alt="" />
+                <h3 data-test="item-name">Coquinha gelada</h3>
+                <p>Lata 350ml</p>
+                <h4 data-test="item-price">R$ 4,90</h4>
+              </div>
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <div
+              class="card drink2"
+              onclick="selectDrink('.drink2')"
+              data-test="drink"
+            >
+              <div class="divCard">
+                <img src="images/coca-cola.png" alt="" />
+                <h3 data-test="item-name">Coquinha gelada</h3>
+                <p>Lata 350ml</p>
+                <h4 data-test="item-price">R$ 4,90</h4>
+              </div>
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <div
+              class="card drink3"
+              onclick="selectDrink('.drink3')"
+              data-test="drink"
+            >
+              <div class="divCard">
+                <img src="images/coca-cola.png" alt="" />
+                <h3 data-test="item-name">Coquinha gelada</h3>
+                <p>Lata 350ml</p>
+                <h4 data-test="item-price">R$ 4,90</h4>
+              </div>
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <h2>Por fim, sua sobremesa</h2>
+        <div class="container dessert">
+          <div class="contentCard">
+            <div
+              class="card dessert1"
+              onclick="selectDessert('.dessert1')"
+              data-test="dessert"
+            >
+              <div class="divCard">
+                <img src="images/pudim.png" alt="" />
+                <h3 data-test="item-name">Pudim</h3>
+                <p>Apenas pudim</p>
+                <p></p>
+                <h4 data-test="item-price">R$ 7,90</h4>
+              </div>
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <div
+              class="card dessert2"
+              onclick="selectDessert('.dessert2')"
+              data-test="dessert"
+            >
+              <div class="divCard">
+                <img src="images/pudim.png" alt="" />
+                <h3 data-test="item-name">Pudim</h3>
+                <p>Apenas pudim</p>
+                <p></p>
+                <h4 data-test="item-price">R$ 7,90</h4>
+              </div>
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <div
+              class="card dessert3"
+              onclick="selectDessert('.dessert3')"
+              data-test="dessert"
+            >
+              <div class="divCard">
+                <img src="images/pudim.png" alt="" />
+                <h3 data-test="item-name">Pudim</h3>
+                <p>Apenas pudim</p>
+                <p></p>
+                <h4 data-test="item-price">R$ 7,90</h4>
+              </div>
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <button
+        id="close"
+        class="standard close disable"
+        onclick="closeOrder()"
+        data-test="order-btn"
+      >
+        Fechar Pedido
+      </button>
+      <button id="ordering " class="standard ordering" data-test="order-btn">
+        Selecione os 3 itens <br />
+        para fechar o pedido
+      </button>
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
